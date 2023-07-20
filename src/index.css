@@ -1,0 +1,180 @@
+/* Estilos generales */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #f00;
+}
+
+/* Estilos de las secciones */
+.section {
+  padding-top: 80px;
+  /* Agregado de padding superior */
+  padding-bottom: 80px;
+  /* Agregado de padding inferior */
+}
+
+/* Estilos del footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  /* Centrado horizontal del contenido */
+}
+/*Diseó del formulario*/
+#formulario {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#formulario label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#formulario input,
+#formulario select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#formulario input[type="submit"],
+#formulario button {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#formulario input[type="submit"]:hover,
+#formulario button:hover {
+  background-color: #45a049;
+}
+
+#tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tabla th,
+#tabla td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+#tabla th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+/* Estilos de los productos */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-item {
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 100%;
+  width: 30%;
+  /* Tamaño del 30% del ancho de la página */
+}
+
+/* Estilos para dispositivos móviles ****** VALOR******** */
+@media screen and (max-width: 600px) {
+  /* Estilos del navbar */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Estilos de las secciones */
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.section1-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.section1-grid .slide {
+  flex: 0 0 30%;
+  max-width: 30%;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section1-grid .slide img {
+  width: 100%;
+  display: block;
+}
+
+.section1-grid .slide h1 {
+  text-align: center;
+}
+
+#seccion2 .imagenquienessomos {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+#seccion2 .parrafo {
+  text-align: center;
+}
